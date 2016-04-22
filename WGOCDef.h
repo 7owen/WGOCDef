@@ -38,7 +38,7 @@
     if (![fileManager fileExistsAtPath:PATH]) {  \
         NSError *error = nil;   \
         if (![fileManager createDirectoryAtPath:PATH withIntermediateDirectories:YES attributes:nil error:&error]) { \
-            CKLogError(@"%@",[error description]);   \
+            NSLog(@"%@",[error description]);   \
         }   \
     }   \
 }
